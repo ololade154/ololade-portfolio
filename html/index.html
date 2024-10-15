@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <div class="nav_bar">
+      <div class="logo">KEMTECH</div>
+      <img class="menu-icon" src="/images/Menu-olo.png" alt="" />
+      <ul class="desktop-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-nav">
+      <img class="close-icon" src="/images/close-olo.png" alt="" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hero-section">
+      <div class="hero-text">
+        <h3>Hello, i'm</h3>
+        <h5>Shogbaike ololade</h5>
+        <p class="hero-about">A front-end web developer</p>
+        <p class="hero-about-text">
+          I focus on building user-friendly web interfaces that provide smooth
+          and enjoyable experiences for users. By translating design ideas into
+          interactive websites, I ensure that they look great and function well
+          on all devices.
+        </p>
+        <div class="buttons">
+          <button class="about-button">About me</button>
+          <button class="project-button">Projects</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/images/portfolio.jpg" alt="" class="port1" />
+      </div>
+    </div>
+    <div class="border"></div>
+    <div class="about-me">
+      <h5>about me:</h5>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id voluptatem
+        reprehenderit ad quisquam quibusdam.
+      </p>
+    </div>
+  </body>
+  <script>
+    let openIcon = document.querySelector(".menu-icon");
+    let closeIcon = document.querySelector(".close-icon");
+    let navBar = document.querySelector(".mobile-nav");
+    console.log(openIcon);
+    console.log(closeIcon);
+    console.log(navBar);
+    // closeIcon.addEventListener("click", () => {
+
+    // });
+
+    openIcon.addEventListener("click", function () {
+      navBar.style.display = "block";
+    });
+    closeIcon.addEventListener("click", function () {
+      navBar.style.display = "none";
+    });
+  </script>
+</html>
