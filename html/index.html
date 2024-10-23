@@ -17,14 +17,13 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
-    
 
     <div class="mobile-nav">
       <div class="close-icon-wrapper">
         <img class="close-icon" src="/images/close-olo.png" alt="" />
       </div>
       <ul>
-        <li class="nav-link"><a href="#">Home</a></li>
+        <li class="nav-link"><a href="/html/index.html">Home</a></li>
         <li class="nav-link"><a href="#">About me</a></li>
         <li class="nav-link"><a href="#">Projects</a></li>
         <li class="nav-link"><a href="#">Contact</a></li>
@@ -38,9 +37,9 @@
           <p class="hero-about">A front-end web developer</p>
           <p class="hero-about-text">
             I focus on building user-friendly web interfaces that provide smooth
-            and enjoyable experiences for users. By translating design ideas into
-            interactive websites, I ensure that they look great and function well
-            on all devices.
+            and enjoyable experiences for users. By translating design ideas
+            into interactive websites, I ensure that they look great and
+            function well on all devices.
           </p>
           <div class="buttons">
             <button class="about-button">About me</button>
@@ -51,16 +50,109 @@
           <img src="/images/portfolio.jpg" alt="" class="port1" />
         </div>
       </div>
-      <div class="border"></div>
       <div class="about-me">
         <h2>about me:</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id voluptatem
-          reprehenderit ad quisquam quibusdam.
+          I'm Shogbaike Ololade, a front-end web developer with experience in
+          HTML, CSS, and JavaScript. I’m passionate about creating visually
+          appealing and user-friendly websites that enhance the overall user
+          experience.
         </p>
       </div>
+      <div class="projects">
+        <h3>Featured projects:</h3>
+        <p class="project-text">
+          I've worked on various projects and designed several using Figma to
+          create user-friendly interfaces. Here are a few conceptual projects
+          I've worked on.
+        </p>
+        <div class="projects-image">
+          <div class="card1">
+            <img src="/images/new-globus.PNG" alt="" class="card-image" />
+            <div class="card-content">
+              <h4 card-title>GLOBUS BANK</h4>
+              <p class="card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+                nihil a reprehenderit.
+              </p>
+              <div class="card-buttons">
+                <button class="view-button" onclick="globusTab()">
+                  View Live
+                </button>
+                <button class="repo-button" onclick="globusRepo()">
+                  Github Repo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <img
+              src="/images/construction project.PNG"
+              alt=""
+              class="card-image"
+            />
+            <div class="card-content">
+              <h4 card-title>CONSTRUCTION</h4>
+              <p class="card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+                nihil a reprehenderit.
+              </p>
+              <div class="card-buttons">
+                <button class="view-button" onclick="constructionTab()">
+                  View Live
+                </button>
+                <button class="repo-button" onclick="constructionRepo()">
+                  Github Repo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card3">
+            <img src="/images/yummy project.PNG" alt="" class="card-image" />
+            <div class="card-content">
+              <h4 card-title>YUMMY EAT</h4>
+              <p class="card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+                nihil a reprehenderit.
+              </p>
+              <div class="card-buttons">
+                <button class="view-button" onclick="yummyTab()">
+                  View Live
+                </button>
+                <button class="repo-button" onclick="yummyRepo()">
+                  Github Repo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-section">
+        <div class="contact-social">
+          <h5>Connect with me:</h5>
+          <p>satisfied with me? Pls contact me</p>
+          <div class="social-link">
+            <a
+              href="https://www.instagram.com/in/ololadeshogbaike"
+              target="_blank"
+            >
+              <img src="/images/instagram-logo-36.png" alt="" />
+            </a>
+            <a href="mailto:shogbaikeoluwakemi2020@gmail.com">
+              <img src="/images/email.png" alt="Gmail" />
+            </a>
+            <img src="/images/twitter-logo-36.png" alt="" />
+          </div>
+        </div>
+        <div class="contact-input">
+          <span>Contact me, lets make magic together</span>
+          <input type="text" placeholder="Name:" />
+          <input type="text" placeholder="Email:" />
+          <input type="text" placeholder="Message:" />
+          <button class="contact-button">Save</button>
+        </div>
+      </div>
     </div>
-    
   </body>
   <script>
     let openIcon = document.querySelector(".menu-icon");
@@ -75,13 +167,31 @@
 
     navBar.style.opacity = 1;
 
-
     openIcon.addEventListener("click", function () {
-      navBar.className ="mobile-nav-visible"
-
+      navBar.className = "mobile-nav-visible";
     });
     closeIcon.addEventListener("click", function () {
-      navBar.className ="mobile-nav"
+      navBar.className = "mobile-nav";
     });
+  </script>
+  <script>
+    function globusTab() {
+      window.open("https://globus-bank-gules.vercel.app/");
+    }
+    function globusRepo() {
+      window.open("https://github.com/ololade154/GLOBUS-BANK.git");
+    }
+    function constructionTab() {
+      window.open("https://new-project-six-drab.vercel.app");
+    }
+    function constructionRepo() {
+      window.open("https://github.com/ololade154/new-project.git");
+    }
+    function yummyTab() {
+      window.open("https://yummy-eat-shogbaike-ololades-projects.vercel.app/");
+    }
+    function yummyRepo() {
+      window.open("https://github.com/ololade154/Yummy_eat.git");
+    }
   </script>
 </html>
